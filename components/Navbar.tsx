@@ -1,6 +1,7 @@
 'use client'
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import TypographyAnimation from "./Banner";
 
 const Navbar = ({}) => {
     const path = usePathname();
@@ -27,6 +28,7 @@ const Navbar = ({}) => {
             <div>
                 <h1 className=" text-black text-3xl font-semibold ">Rukudzo Mushunje</h1>
             </div>
+            <TypographyAnimation/>
             <div>
                 <ul className=" flex text-2xl ">
                     {menueItem.map((menu)=>{
