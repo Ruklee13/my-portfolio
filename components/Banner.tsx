@@ -1,5 +1,5 @@
 const TypographyAnimation = () => {
-    const firstWord = 'develop';
+    const firstWord = 'developdevelopdevelopdevelop';
     const secondWord = 'design';
   
     const renderWordAnimation = (word: string, startingDelay: number) => {
