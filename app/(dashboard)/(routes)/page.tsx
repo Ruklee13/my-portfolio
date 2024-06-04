@@ -1,9 +1,9 @@
-import Image from "next/image";
+import TypographyAnimation from "@/components/Banner";
 
 export default function Home() {
-  return (
-    <p className=" text-red-950 text-3xl font-medium">
-      Hellosw world
-    </p>
-  );
+    return (
+        <div>
+        <TypographyAnimation/>
+        </div>
+    )
 }
