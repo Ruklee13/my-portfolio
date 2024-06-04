@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Sidebar } from "@/components/Sidebar";
 
 const DashboardLayout = ({
@@ -13,6 +14,15 @@ const DashboardLayout = ({
             <div>
                 {children}
             </div>
+=======
+import Navbar from "@/components/Navbar";
+const DasbboardLayout = ({}) => {
+    return(
+        <div className=" border-black border-4 h-full w-full flex flex-col">
+            <Navbar/>
+            <div className=" border-green-900 border-2"></div>
+        
+>>>>>>> parent of 0aec842 (Homepage)
         </div>
     );
 }
