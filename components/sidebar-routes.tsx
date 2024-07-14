@@ -3,20 +3,24 @@ import { SidebarItem } from "./sidebar-item";
 
 const guestRoutes = [
     {
-        label: "link",
+        label: "Home",
+        href: "/",
+    },
+    {
+        label: "Projects",
         href: "/portfolio",
     },
     {
-        label: "link",
-        href: "linkinger",
+        label: "Gallery",
+        href: "/work",
     },
     {
-        label: "link",
-        href: "linkinger",
+        label: "Blog",
+        href: "/posts"
     },
     {
-        label: "link",
-        href: "linkinger",
+        label: 'Resume',
+        href: '/resume'
     },
 ]
 export const SidebarRoutes = () => {
