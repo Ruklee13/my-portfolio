@@ -1,9 +1,5 @@
 const TypographyAnimation = () => {
-<<<<<<< HEAD
-    const firstWord = 'Hello this is rukudzo Mushunje';
-=======
     const firstWord = 'develop';
->>>>>>> parent of 0aec842 (Homepage)
     const secondWord = 'design';
   
     const renderWordAnimation = (word: string, startingDelay: number) => {
