@@ -1,7 +1,7 @@
 
-import { Sidebar } from "@/components/sidebar";
+import { Sidebar } from "@/components/Sidebar";
 
-const DashBaordLayout = ({
+const DashBoardLayout = ({
     children
 }: {
     children: React.ReactNode
@@ -17,4 +17,4 @@ const DashBaordLayout = ({
         </div>
     )
 }
-export default DashBaordLayout
+export default DashBoardLayout
