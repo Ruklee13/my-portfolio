@@ -1,6 +1,6 @@
 const TypographyAnimation = () => {
-    const firstWord = 'develop';
-    const secondWord = 'design';
+    const firstWord = 'Wealth. Fame. Power. The man who had everything in this world... The Pirate King, Gold Roger';
+    const secondWord = ' The Great Age of Pirates! Words he spoke drove countless men out to sea. And so men set sights on the Grand Line, in pursuit of their dreams. The world has truly entered a Great Pirate Era!';
   
     const renderWordAnimation = (word: string, startingDelay: number) => {
     //const delay = ['0ms','50ms','100ms','150ms','200ms','250ms','300ms'];
@@ -19,7 +19,7 @@ const TypographyAnimation = () => {
     };
   
     return (
-        <span className='relative inline-flex ml-2 overflow-hidden p-2 text-3xl font-semibold'>
+        <span className='relative inline-flex ml-2 overflow-hidden p-2 text-3xl font-semibold mt-2'>
           <div className='flex flex-row'>
             {renderWordAnimation(firstWord, 0)}
           </div>

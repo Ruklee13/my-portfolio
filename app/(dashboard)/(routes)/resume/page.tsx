@@ -1,29 +1,15 @@
-import { GetStaticProps } from "next";
-import fs from 'fs'
-import path from "path";
-import MarkdownRender from "@/components/MardownRedner";
-import React from "react";
+'use client'
+import React from 'react';
+import PdfViewer from '@/components/Pdfviewer';
 
-interface Props {
-    markdown: string
-}
+const PdfPage = () => {
+    const pdfUrl = '/Resume.pdf'; // Replace with your PDF URL
 
-const Resume: React.FC<Props> = ({markdown}) => {
-    return(
-        <div className=" prose mx-auto my-10">
-            <MarkdownRender markdown={markdown}/>
+    return (
+        <div className=' h-full w-full'>
+            <PdfViewer pdfUrl={pdfUrl} />
         </div>
-    )
-}
+    );
+};
 
-export const getStaticProps: GetStaticProps = async() => {
-    const filepath = path.join(process.cwd(),'data','resume.md')
-    const markdown = fs.readFileSync(filepath, 'utf-8')
-    return {
-        props: {
-            markdown,
-        },
-    }
-}
-
-export default Resume
+export default PdfPage;
